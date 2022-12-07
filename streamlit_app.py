@@ -11,10 +11,10 @@ def load_model():
 saved_model = load_model()
     
 btn = col2.button('Generar imágen aleatoria')
-    if btn:
-      from matplotlib import pyplot as plt
-      plt.imshow(saved_model.gen_image[11].reshape(28,28), interpolation='none')
-      plt.show()
+if btn:
+    from matplotlib import pyplot as plt
+    plt.imshow(saved_model.gen_image[11].reshape(28,28), interpolation='none')
+    plt.show()
 
     
 
