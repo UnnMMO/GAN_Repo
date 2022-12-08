@@ -12,7 +12,8 @@ def load_model():
 
 
 saved_model = load_model()
-    
+
+col1, col2, col3 = st.columns([2, 5, 2])
 btn = col2.button('Generar imágen aleatoria')
 if btn:
     from matplotlib import pyplot as plt
