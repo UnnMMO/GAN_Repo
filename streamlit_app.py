@@ -34,7 +34,7 @@ if btn:
     idx=0
     for i in range(2):
      for j in range(5):
-      axe[i,j].imshow(gen_image[idx].reshape(28,28),cmap='gray')
+      axe[i,j].imshow(gen_image[idx].reshape(10,10),cmap='gray')
       idx+=3
     
 
