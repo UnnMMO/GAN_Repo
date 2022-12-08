@@ -7,7 +7,7 @@ from tensorflow import keras
 @st.cache
 def load_model():
     # El modelo se lee de la carpeta 'model'
-    saved_model = keras.models.load_model('path_to_my_model.h5')
+    saved_model = keras.models.load_model('GAN_FashionMNIST.h5')
     return saved_model
 
 
