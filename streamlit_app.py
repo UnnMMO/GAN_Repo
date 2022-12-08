@@ -21,7 +21,7 @@ if btn:
     
     noise=np.random.normal(loc=0, scale=1, size=(100,100))
 
-    gen_image = saved_model.generator.predict(noise)
+    gen_image = saved_model.predict(noise)
     
     plt.imshow(saved_model.gen_image[11].reshape(28,28), interpolation='none')
     plt.show()
