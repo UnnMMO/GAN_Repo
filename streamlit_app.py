@@ -27,7 +27,7 @@ if btn:
     plt.imshow(gen_image, interpolation='none')
     plt.show()
     st.image(gen_image)
-    st.image(plt.imshow(gen_image, interpolation='none'))
+    #st.image(plt.imshow(gen_image, interpolation='none'))
 
     
 
