@@ -17,6 +17,11 @@ col1, col2, col3 = st.columns([2, 5, 2])
 btn = col2.button('Generar imágen aleatoria')
 if btn:
     from matplotlib import pyplot as plt
+    
+    noise=np.random.normal(loc=0, scale=1, size=(100,100))
+
+    gen_image = generator.predict(noise)
+    
     plt.imshow(saved_model.gen_image[11].reshape(28,28), interpolation='none')
     plt.show()
 
