@@ -19,7 +19,7 @@ btn = col2.button('Generar imágen aleatoria')
 if btn:
     from matplotlib import pyplot as plt
     
-    noise=np.random.normal(loc=0, scale=1, size=(100,100))
+    noise=np.random.normal(loc=0, scale=1, size=(784,100))
 
     gen_image = saved_model.predict(noise)
     
@@ -34,7 +34,7 @@ if btn:
     idx=0
     for i in range(2):
      for j in range(5):
-      axe[i,j].imshow(gen_image[idx].reshape(10,10),cmap='gray')
+      axe[i,j].imshow(gen_image[idx].reshape(28,28),cmap='gray')
       idx+=3
     
 
