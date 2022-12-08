@@ -23,7 +23,7 @@ if btn:
 
     gen_image = saved_model.predict(noise)
     
-    plt.imshow(saved_model.gen_image[11].reshape(28,28), interpolation='none')
+    plt.imshow(gen_image[11].reshape(28,28), interpolation='none')
     plt.show()
 
     
