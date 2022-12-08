@@ -28,13 +28,6 @@ if btn:
     plt.show()
     st.image(gen_image.reshape(28,28))
     #st.image(plt.imshow(gen_image, interpolation='none'))
-    
-    fig,axe=plt.subplots(2,5)
-    fig.suptitle('Generated Images from Noise using DCGANs')
-    idx=0
-    for i in range(2):
-     for j in range(5):
-      axe[i,j].imshow(gen_image[idx].reshape(28,28),cmap='gray')
-      idx+=3
+
     
 
